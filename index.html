@@ -1,71 +1,97 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Vinicius Albuquerque</title>
+    <meta name="description" content="Portfólio de Vinicius Albuquerque, estudante de Ciência da Computação com foco em desenvolvimento backend, Python e APIs.">
+    <meta name="theme-color" content="#f8f2e9">
+    <title>Vinicius Albuquerque | Desenvolvedor Backend</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
-
     <header class="cabecalho">
-        <a href="index.html" class="marca">
-            <img src="img/fotoeu.jpeg" alt="Foto de Vinicius Albuquerque">
+        <a href="index.html" class="marca" aria-label="Página inicial de Vinicius Albuquerque">
+            <span class="marca-simbolo">VA</span>
             <span>Vinicius Albuquerque</span>
         </a>
-
-        <nav class="menu">
-            <a href="index.html" class="ativo">Início</a>
-            <a href="templates/sobre.html">Sobre mim</a>
+        <nav class="menu" aria-label="Navegação principal">
+            <a href="index.html" class="ativo" aria-current="page">Início</a>
+            <a href="templates/sobre.html">Sobre</a>
             <a href="templates/habilidades.html">Habilidades</a>
             <a href="templates/projetos.html">Projetos</a>
             <a href="templates/contato.html">Contato</a>
         </nav>
-
-        <button id="tema" class="botao-tema">☾</button>
+        <button id="tema" class="botao-tema" type="button" aria-label="Alternar tema" title="Alternar tema">☾</button>
     </header>
 
-    <main class="inicio">
-        <div class="inicio-texto">
-            <p class="destaque">Olá, eu sou</p>
-
-            <h1>Vinicius <span>Albuquerque</span></h1>
-
-            <h2>Estudante de Ciência da Computação</h2>
-
-            <p>
-                Tenho interesse em desenvolvimento de software,
-                principalmente na área de backend. Estou sempre
-                buscando aprender novas tecnologias e desenvolver
-                projetos que aprimorem minhas habilidades.
-            </p>
-
-            <div class="botoes">
-                <a href="templates/projetos.html" class="botao">Ver projetos</a>
-                <a href="templates/contato.html" class="botao botao-secundario">
-                    Entre em contato
-                </a>
+    <main>
+        <section class="inicio largura">
+            <div class="inicio-texto">
+                <p class="sobretitulo"><span class="ponto"></span> Estudante de Ciência da Computação · UNICAP</p>
+                <h1>Construindo soluções<br>com <span>código e propósito.</span></h1>
+                <p class="introducao">Sou Vinicius, desenvolvedor em formação com foco em backend. Tenho trabalhado com Python, APIs REST e bancos de dados, sempre buscando entender bem cada parte do que construo.</p>
+                <div class="botoes">
+                    <a href="templates/projetos.html" class="botao">Explorar projetos <span aria-hidden="true">↗</span></a>
+                    <a href="templates/contato.html" class="botao botao-secundario">Entrar em contato</a>
+                </div>
+                <div class="atalhos">
+                    <a href="https://github.com/Viniccius-Albuquerque" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                    <a href="https://www.linkedin.com/in/vinicius-albuquerque-376a172ba/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                </div>
             </div>
-        </div>
+            <aside class="cartao-perfil" aria-label="Resumo profissional">
+                <div class="perfil-topo"><span class="status"></span> Atualmente aprendendo e construindo</div>
+                <div class="perfil-iniciais">VA<span>.</span></div>
+                <p class="perfil-legenda">Backend development</p>
+                <div class="linha-perfil"></div>
+                <div class="perfil-dado"><span>Principal linguagem</span><strong>Python</strong></div>
+                <div class="perfil-dado"><span>APIs</span><strong>FastAPI · REST</strong></div>
+                <div class="perfil-dado"><span>Dados</span><strong>PostgreSQL · MySQL</strong></div>
+            </aside>
+        </section>
 
-        <div class="inicio-imagem">
-            <img src="img/fotoeu.jpeg" alt="Foto de Vinicius Albuquerque">
-        </div>
+        <section class="secao largura">
+            <div class="cabecalho-secao">
+                <div><p class="sobretitulo">01 / SELEÇÃO</p><h2>Projetos em destaque</h2></div>
+                <a class="link-texto" href="templates/projetos.html">Todos os projetos <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="grade-projetos">
+                <article class="cartao projeto">
+                    <div class="projeto-topo"><span class="projeto-numero">01</span><span class="projeto-tipo">API + Web</span></div>
+                    <h3>Academia Sistem</h3>
+                    <p>Sistema web para gerenciar alunos, treinos e exercícios, com API REST e banco de dados relacional.</p>
+                    <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span></div>
+                    <div class="links-projeto"><a href="https://academiasistem.netlify.app" target="_blank" rel="noopener noreferrer">Aplicação ↗</a><a href="https://github.com/Viniccius-Albuquerque/Academia_Sistem" target="_blank" rel="noopener noreferrer">Código ↗</a></div>
+                </article>
+                <article class="cartao projeto">
+                    <div class="projeto-topo"><span class="projeto-numero">02</span><span class="projeto-tipo">Projeto real</span></div>
+                    <h3>Totem Museu Cícero Dias</h3>
+                    <p>Aplicação interativa para apresentar conteúdos culturais e históricos aos visitantes do museu em Escada–PE.</p>
+                    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <div class="links-projeto"><a href="https://github.com/Viniccius-Albuquerque/site-Cicero-Dias" target="_blank" rel="noopener noreferrer">Código do projeto ↗</a></div>
+                </article>
+                <article class="cartao projeto">
+                    <div class="projeto-topo"><span class="projeto-numero">03</span><span class="projeto-tipo">Acadêmico</span></div>
+                    <h3>Métodos Numéricos</h3>
+                    <p>Projeto em Python para estudar e comparar o comportamento de algoritmos em diferentes tamanhos de entrada.</p>
+                    <div class="tags"><span>Python</span><span>Jupyter Notebook</span></div>
+                    <div class="links-projeto"><a href="https://github.com/Viniccius-Albuquerque/Numerical-Methods" target="_blank" rel="noopener noreferrer">Ver repositório ↗</a></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="faixa largura">
+            <div><p class="sobretitulo">02 / FOCO TÉCNICO</p><h2>Do endpoint ao banco de dados.</h2><p>Tenho me dedicado a construir aplicações organizadas, validar dados e separar as responsabilidades do código.</p></div>
+            <div class="stack-lista"><span>Python</span><span>FastAPI</span><span>SQL</span><span>PostgreSQL</span><span>MySQL</span><span>Git</span></div>
+            <a class="link-texto" href="templates/habilidades.html">Ver habilidades <span aria-hidden="true">→</span></a>
+        </section>
     </main>
 
     <footer class="rodape">
-        <p>© <span id="ano"></span> Vinicius Edecio Albuquerque de Sousa</p>
-
-        <div class="redes-rodape">
-            <a href="https://github.com/Viniccius-Albuquerque" target="_blank"
-            rel="noopener noreferrer">GitHub</a>
-
-            <a href="https://www.linkedin.com/in/vinicius-albuquerque-376a172ba/" target="_blank"
-            rel="noopener noreferrer">LinkedIn</a>
-        </div>
+        <p>© <span id="ano"></span> Vinicius Albuquerque</p>
+        <p>Feito com HTML, CSS e JavaScript.</p>
+        <div class="redes-rodape"><a href="https://github.com/Viniccius-Albuquerque" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/vinicius-albuquerque-376a172ba/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
     </footer>
-
 </body>
 </html>
