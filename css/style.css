@@ -162,35 +162,109 @@ h1, h2, h3 { font-family: 'Manrope', sans-serif; line-height: 1.2; letter-spacin
 .rodape a:hover { color: var(--destaque); }
 
 @media (max-width: 760px) {
-    .cabecalho { gap: 15px; padding-inline: 5%; }
-    .navegacao { gap: 14px; }
-    .navegacao a { font-size: .82rem; }
-    .inicio { grid-template-columns: 1fr 100px; gap: 22px; padding-block: 75px; }
-    .foto-perfil {
-        width: 140px;
-        height: 180px;
+    .cabecalho {
+        gap: 15px;
+        padding-inline: 5%;
     }
-    .grade-projetos { grid-template-columns: 1fr 1fr; }
-    .projeto { min-height: 250px; }
+    .navegacao {
+        gap: 14px;
+    }
+    .navegacao a {
+        font-size: .82rem;
+    }
+    .inicio {
+        grid-template-columns: minmax(0, 1fr) 120px;
+        align-items: center;
+        gap: 20px;
+        padding-block: 75px;
+    }
+    .inicio h1 {
+        font-size: clamp(2rem, 5vw, 2.8rem);
+        overflow-wrap: anywhere;
+    }
+    .cargo {
+        font-size: 1rem;
+    }
+    .foto-perfil {
+        width: 120px;
+        height: 150px;
+        justify-self: end;
+    }
+    .grade-projetos {
+        grid-template-columns: 1fr 1fr;
+    }
+    .projeto {
+        min-height: 250px;
+    }
 }
 @media (max-width: 540px) {
-    .cabecalho { flex-wrap: wrap; }
-    .marca { margin-right: auto; }
-    .navegacao { order: 3; width: 100%; justify-content: space-between; gap: 8px; }
-    .navegacao a { font-size: .8rem; }
-    .inicio { grid-template-columns: 1fr; gap: 25px; padding-block: 65px; }
-    .inicio h1 { font-size: 2.65rem; }
-    .foto-perfil {
-        width: 130px;
-        height: 160px;
-        justify-self: start;
+    .cabecalho {
+        flex-wrap: wrap;
     }
-    .secao { padding-block: 38px 45px; }
-    .titulo-com-link { align-items: start; flex-direction: column; gap: 10px; }
-    .grade-projetos, .grade-habilidades, .contato { grid-template-columns: 1fr; }
-    .projeto { min-height: 0; }
-    .contato { gap: 22px; }
-    .rodape { flex-direction: column; gap: 8px; }
+    .marca {
+        margin-right: auto;
+    }
+    .navegacao {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+    }
+    .navegacao a {
+        font-size: .8rem;
+    }
+    .inicio {
+        grid-template-columns: minmax(0, 1fr) 95px;
+        align-items: center;
+        gap: 12px;
+        padding-block: 55px;
+    }
+    .inicio h1 {
+        font-size: clamp(1.65rem, 7vw, 2.4rem);
+        overflow-wrap: anywhere;
+    }
+    .cargo {
+        font-size: .92rem;
+    }
+    .resumo {
+        font-size: .88rem;
+    }
+    .foto-perfil {
+        width: 95px;
+        height: 125px;
+        justify-self: end;
+        border-radius: 9px;
+    }
+    .acoes {
+        gap: 8px;
+    }
+    .botao {
+        padding: 9px 10px;
+        font-size: .8rem;
+    }
+    .secao {
+        padding-block: 38px 45px;
+    }
+    .titulo-com-link {
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .grade-projetos,
+    .grade-habilidades,
+    .contato {
+        grid-template-columns: 1fr;
+    }
+    .projeto {
+        min-height: 0;
+    }
+    .contato {
+        gap: 22px;
+    }
+    .rodape {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
