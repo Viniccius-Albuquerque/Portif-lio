@@ -3,95 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Vinicius Albuquerque, estudante de Ciência da Computação com foco em desenvolvimento backend, Python e APIs.">
+    <meta name="description" content="Portfólio de Vinicius Albuquerque, estudante de Ciência da Computação com foco em desenvolvimento backend.">
     <meta name="theme-color" content="#f8f2e9">
-    <title>Vinicius Albuquerque | Desenvolvedor Backend</title>
+    <title>Vinicius Albuquerque | Desenvolvedor</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="cabecalho">
-        <a href="index.html" class="marca" aria-label="Página inicial de Vinicius Albuquerque">
-            <span class="marca-simbolo">VA</span>
-            <span>Vinicius Albuquerque</span>
-        </a>
-        <nav class="menu" aria-label="Navegação principal">
-            <a href="index.html" class="ativo" aria-current="page">Início</a>
-            <a href="templates/sobre.html">Sobre</a>
-            <a href="templates/habilidades.html">Habilidades</a>
-            <a href="templates/projetos.html">Projetos</a>
-            <a href="templates/contato.html">Contato</a>
+        <a class="marca" href="#inicio" aria-label="Vinicius Albuquerque — início">VA</a>
+
+        <nav class="navegacao" aria-label="Navegação principal">
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contato">Contato</a>
         </nav>
-        <button id="tema" class="botao-tema" type="button" aria-label="Alternar tema" title="Alternar tema">☾</button>
+
+        <button class="botao-tema" id="tema" type="button" aria-label="Ativar tema escuro" title="Alternar tema">☾</button>
     </header>
 
     <main>
-        <section class="inicio largura">
-            <div class="inicio-texto">
-                <p class="sobretitulo"><span class="ponto"></span> Estudante de Ciência da Computação · UNICAP</p>
-                <h1>Construindo soluções<br>com <span>código e propósito.</span></h1>
-                <p class="introducao">Sou Vinicius, desenvolvedor em formação com foco em backend. Tenho trabalhado com Python, APIs REST e bancos de dados, sempre buscando entender bem cada parte do que construo.</p>
-                <div class="botoes">
-                    <a href="templates/projetos.html" class="botao">Explorar projetos <span aria-hidden="true">↗</span></a>
-                    <a href="templates/contato.html" class="botao botao-secundario">Entrar em contato</a>
-                </div>
-                <div class="atalhos">
-                    <a href="https://github.com/Viniccius-Albuquerque" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-                    <a href="https://www.linkedin.com/in/vinicius-albuquerque-376a172ba/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        <section class="inicio secao-largura" id="inicio">
+            <div class="inicio-conteudo">
+                <p class="sobretitulo">Software Developer</p>
+                <h1>Vinicius Albuquerque</h1>
+                <p class="cargo">Estudante de Ciência da Computação com foco em desenvolvimento backend.</p>
+                <p class="resumo">Trabalho com Python, APIs REST e bancos de dados relacionais. Gosto de transformar o que estudo em projetos práticos.</p>
+                <div class="acoes">
+                    <a class="botao" href="#projetos">Ver projetos <span aria-hidden="true">↘</span></a>
+                    <a class="botao botao-secundario" href="https://www.linkedin.com/in/vinicius-albuquerque-376a172ba/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
                 </div>
             </div>
-            <aside class="cartao-perfil" aria-label="Resumo profissional">
-                <div class="perfil-topo"><span class="status"></span> Atualmente aprendendo e construindo</div>
-                <div class="perfil-iniciais">VA<span>.</span></div>
-                <p class="perfil-legenda">Backend development</p>
-                <div class="linha-perfil"></div>
-                <div class="perfil-dado"><span>Principal linguagem</span><strong>Python</strong></div>
-                <div class="perfil-dado"><span>APIs</span><strong>FastAPI · REST</strong></div>
-                <div class="perfil-dado"><span>Dados</span><strong>PostgreSQL · MySQL</strong></div>
-            </aside>
+            <div class="monograma" aria-hidden="true">VA</div>
         </section>
 
-        <section class="secao largura">
-            <div class="cabecalho-secao">
-                <div><p class="sobretitulo">01 / SELEÇÃO</p><h2>Projetos em destaque</h2></div>
-                <a class="link-texto" href="templates/projetos.html">Todos os projetos <span aria-hidden="true">→</span></a>
+        <section class="secao secao-largura" id="sobre">
+            <div class="titulo-secao">
+                <p class="sobretitulo">01 / Sobre</p>
+                <h2>Um pouco sobre mim</h2>
             </div>
+            <div class="sobre-conteudo">
+                <p>Sou estudante de Ciência da Computação na UNICAP, com foco em desenvolvimento backend com Python, construção de APIs e bancos de dados relacionais.</p>
+                <p>Tenho desenvolvido projetos acadêmicos e pessoais para colocar em prática meus conhecimentos de programação, lógica, regras de negócio e manipulação de dados. Nesse processo, venho trabalhando com Python, SQL, MySQL e PostgreSQL, além de aprofundar meus conhecimentos em desenvolvimento de APIs REST.</p>
+                <p>Já participei do desenvolvimento de uma aplicação web interativa para o totem presencial do Museu Cícero Dias, em Escada–PE, com foco na apresentação de conteúdos históricos, culturais e biográficos aos visitantes.</p>
+                <p>Meu objetivo é continuar evoluindo tecnicamente e buscar oportunidades nas quais eu possa contribuir, aprender com outras pessoas e melhorar meu código</p>
+            </div>
+        </section>
+
+        <section class="secao secao-largura" id="projetos">
+            <div class="titulo-secao titulo-com-link">
+                <div>
+                    <p class="sobretitulo">02 / Projetos</p>
+                    <h2>Trabalhos selecionados</h2>
+                </div>
+                <a class="link-texto" href="https://github.com/Viniccius-Albuquerque" target="_blank" rel="noopener noreferrer">Mais no GitHub ↗</a>
+            </div>
+
             <div class="grade-projetos">
-                <article class="cartao projeto">
-                    <div class="projeto-topo"><span class="projeto-numero">01</span><span class="projeto-tipo">API + Web</span></div>
+                <article class="projeto">
+                    <div class="projeto-cabecalho"><span>01</span><span class="tipo-projeto">API + Web</span></div>
                     <h3>Academia Sistem</h3>
                     <p>Sistema web para gerenciar alunos, treinos e exercícios, com API REST e banco de dados relacional.</p>
-                    <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span></div>
-                    <div class="links-projeto"><a href="https://academiasistem.netlify.app" target="_blank" rel="noopener noreferrer">Aplicação ↗</a><a href="https://github.com/Viniccius-Albuquerque/Academia_Sistem" target="_blank" rel="noopener noreferrer">Código ↗</a></div>
+                    <ul class="tecnologias-projeto" aria-label="Tecnologias utilizadas">
+                        <li>Python</li><li>FastAPI</li><li>PostgreSQL</li>
+                    </ul>
+                    <div class="links-projeto">
+                        <a href="https://academiasistem.netlify.app" target="_blank" rel="noopener noreferrer">Aplicação ↗</a>
+                        <a href="https://github.com/Viniccius-Albuquerque/Academia_Sistem" target="_blank" rel="noopener noreferrer">Código ↗</a>
+                    </div>
                 </article>
-                <article class="cartao projeto">
-                    <div class="projeto-topo"><span class="projeto-numero">02</span><span class="projeto-tipo">Projeto real</span></div>
+
+                <article class="projeto">
+                    <div class="projeto-cabecalho"><span>02</span><span class="tipo-projeto">Projeto real</span></div>
                     <h3>Totem Museu Cícero Dias</h3>
-                    <p>Aplicação interativa para apresentar conteúdos culturais e históricos aos visitantes do museu em Escada–PE.</p>
-                    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-                    <div class="links-projeto"><a href="https://github.com/Viniccius-Albuquerque/site-Cicero-Dias" target="_blank" rel="noopener noreferrer">Código do projeto ↗</a></div>
+                    <p>Aplicação interativa desenvolvida para apresentar conteúdos culturais e históricos em um Totem aos visitantes do museu, em Escada-PE.</p>
+                    <ul class="tecnologias-projeto" aria-label="Tecnologias utilizadas">
+                        <li>HTML</li><li>CSS</li><li>JavaScript</li>
+                    </ul>
+                    <div class="links-projeto">
+                        <a href="https://github.com/Viniccius-Albuquerque/site-Cicero-Dias" target="_blank" rel="noopener noreferrer">Código ↗</a>
+                    </div>
                 </article>
-                <article class="cartao projeto">
-                    <div class="projeto-topo"><span class="projeto-numero">03</span><span class="projeto-tipo">Acadêmico</span></div>
+
+                <article class="projeto">
+                    <div class="projeto-cabecalho"><span>03</span><span class="tipo-projeto">Acadêmico</span></div>
                     <h3>Métodos Numéricos</h3>
-                    <p>Projeto em Python para estudar e comparar o comportamento de algoritmos em diferentes tamanhos de entrada.</p>
-                    <div class="tags"><span>Python</span><span>Jupyter Notebook</span></div>
-                    <div class="links-projeto"><a href="https://github.com/Viniccius-Albuquerque/Numerical-Methods" target="_blank" rel="noopener noreferrer">Ver repositório ↗</a></div>
+                    <p>Projeto acadêmico em Python para explorar algoritmos e analisar o comportamento de suas execuções.</p>
+                    <ul class="tecnologias-projeto" aria-label="Tecnologias utilizadas">
+                        <li>Python</li><li>Jupyter Notebook</li>
+                    </ul>
+                    <div class="links-projeto">
+                        <a href="https://github.com/Viniccius-Albuquerque/Numerical-Methods" target="_blank" rel="noopener noreferrer">Código ↗</a>
+                    </div>
                 </article>
             </div>
         </section>
 
-        <section class="faixa largura">
-            <div><p class="sobretitulo">02 / FOCO TÉCNICO</p><h2>Do endpoint ao banco de dados.</h2><p>Tenho me dedicado a construir aplicações organizadas, validar dados e separar as responsabilidades do código.</p></div>
-            <div class="stack-lista"><span>Python</span><span>FastAPI</span><span>SQL</span><span>PostgreSQL</span><span>MySQL</span><span>Git</span></div>
-            <a class="link-texto" href="templates/habilidades.html">Ver habilidades <span aria-hidden="true">→</span></a>
+        <section class="secao secao-largura" id="habilidades">
+            <div class="titulo-secao">
+                <p class="sobretitulo">03 / Habilidades</p>
+                <h2>Tecnologias</h2>
+            </div>
+            <div class="grade-habilidades">
+                <div class="grupo-habilidade">
+                    <h3>Backend</h3>
+                    <p>Python · FastAPI · Pydantic · Java · C</p>
+                </div>
+                <div class="grupo-habilidade">
+                    <h3>Banco de dados</h3>
+                    <p>SQL · PostgreSQL · MySQL</p>
+                </div>
+                <div class="grupo-habilidade">
+                    <h3>Desenvolvimento web</h3>
+                    <p>HTML · CSS · JavaScript</p>
+                </div>
+                <div class="grupo-habilidade">
+                    <h3>Ferramentas</h3>
+                    <p>Git · GitHub · VS Code · Postman · Pytest</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-largura contato" id="contato">
+            <div>
+                <p class="sobretitulo">04 / Contato</p>
+                <h2>Vamos conversar?</h2>
+                <p>Estou aberto a oportunidades e conversas sobre desenvolvimento de software.</p>
+            </div>
+            <div class="contato-links">
+                <a href="mailto:">E-mail <span>Adicione seu e-mail ↗</span></a>
+                <a href="https://www.linkedin.com/in/vinicius-albuquerque-376a172ba/" target="_blank" rel="noopener noreferrer">LinkedIn <span>Perfil profissional ↗</span></a>
+                <a href="https://github.com/Viniccius-Albuquerque" target="_blank" rel="noopener noreferrer">GitHub <span>Repositórios ↗</span></a>
+            </div>
         </section>
     </main>
 
-    <footer class="rodape">
+    <footer class="rodape secao-largura">
         <p>© <span id="ano"></span> Vinicius Albuquerque</p>
-        <p>Feito com HTML, CSS e JavaScript.</p>
-        <div class="redes-rodape"><a href="https://github.com/Viniccius-Albuquerque" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/vinicius-albuquerque-376a172ba/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+        <a href="#inicio">Voltar ao topo ↑</a>
     </footer>
 </body>
 </html>
